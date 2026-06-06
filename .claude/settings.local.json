@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls node_modules/next/dist/docs/)",
+      "Read(//c/Users/patel/**)",
+      "Bash(findstr version *)",
+      "Bash(dir node_modules\\\\next\\\\dist\\\\docs)",
+      "PowerShell($env:NEXT_TELEMETRY_DISABLED=1; Set-Location \"c:\\\\Users\\\\patel\\\\odoo\\\\client\"; npm run build 2>&1 | Select-Object -Last 60)",
+      "PowerShell(try { $h = Invoke-RestMethod 'http://localhost:5000/api/health' -TimeoutSec 3; Write-Output \"API UP: $\\($h.status\\)\" } catch { Write-Output \"API DOWN\" })"
+    ]
+  }
+}
